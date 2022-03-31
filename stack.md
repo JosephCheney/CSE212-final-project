@@ -1,6 +1,6 @@
 # Introduction
 
-The data structure of a stack is exactly what it sounds like. In essense you are looking at the data as if it were a stack of paper on a desk. You put a piece of paper on that desk and if you place another, you would need to remove the top one in order to get to the bottom sheet. Our computers do this naturally if you think of a back arrow on a browser, the data in the browser is stored in order in a stack. When you are writing a paper or code and you do contorl Z to undo, the computer knows what to undo because it is keeping a stack of memory of your previous actions. 
+The data structure of a stack is exactly what it sounds like. In essense you are looking at the data as if it were a stack of paper on a desk. You put a piece of paper on that desk and if you place another, you would need to remove the top one in order to get to the bottom sheet. Our computers do this naturally if you think of a back arrow on a browser, the data in the browser is stored in order in a stack. When you are writing a paper or code and you do control Z to undo, the computer knows what to undo because it is keeping a stack of memory of your previous actions. 
 
 ## Why use this data Structure
 
