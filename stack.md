@@ -22,7 +22,9 @@ This data structure is very useful when you need to keep track of the order of t
 
 ## Big O
 Push = O(1)
+
 Pop = O(1)
+
 Print  = O(n)
 
 ## Problem to solve
