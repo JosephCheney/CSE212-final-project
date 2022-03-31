@@ -1,6 +1,3 @@
-Trees final
-
-
 # Introduction
 
 Trees are a structured form of linked list with nodes that point downward to left and right. They have nodes underneath them which links to the root (the top one) or parent if you are past the root. And those nodes are connected to more children. When there is no connecting node underneath the current node then it is called a Leaf. 
