@@ -74,12 +74,4 @@ Problem to solve
 
 Finish this remove function
 
-It is important to note that there is a variaty of cases that need to be taken into account
- * Empty tree, this would return false
- * Value you are looking to replace is in the root node
- * The Value is not in the tree, this would also return false
- * Value has only a left child
- * Value has a right child only
- * The value has both a left and right children
 
-Parent.child 
