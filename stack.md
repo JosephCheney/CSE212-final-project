@@ -31,7 +31,7 @@ Print  = O(n)
 
 You have a stack of Shirts in your drarw and you want to wear them in order of the top of the stack to the bottom before you do laundry, impliment some code that will output the correct wear order of the shirts. 
 
-```
+```python
 
 import copy
 
