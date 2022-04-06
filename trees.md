@@ -10,6 +10,8 @@ What we are looking at today is the most useful form of a tree which is a Binary
 
 The version of the tree structure that is the most efficient is the Balanced Binary search tree because of the depth of the tree is minimized by having each of the left and right nodes filled as the tree progresses down. This also makes it easy to find the height as it is the number of nodes between the bottom and the top of the tree with no more than a single layer difference of height along the whole bottom of the tree. There are certain algorithms that keep BSTs balanced and one of them is an AVL Tree that automatically senses when a tree has become unbalanced and shifts everything around. 
 
+Trees alos take advantage of recursion which breaks down a bigger problem and makes it into a smaller problem. Recursion calls the function that it is on over again. This makes it so you can have one function to solve a problem with many different possibilities. 
+
 ## Why use this data Structure
 
 We use this data structure because it is a very efficient way to look up data from a large data set. The reason that it is more efficient is because of the time being cut in half to search for something. Self-balancing BSTs are also flexible, in the sense that it's easy to extend them to efficiently record additional information or perform new operations.
@@ -36,18 +38,24 @@ The point of doing so is to display the data that the tree is holding. We need t
 Then to get this to ‘print’ we need to use the keyword yield. But there is more, the yield command provides the next value to the earlier ‘for’ loop that we created. Yield also acts like a return function but it does not stop the continuation of the flow of the function. This is special so the function can keep going when the __iter__ is called again. “yield from” is also a keyword that allows you to tell another function to do the yielding. This is also useful if you need your __iter__ function to call another function. 
 
 	
-3.    Inorder (Left, Root, Right)
+3.  Inorder (Left, Root, Right)
+    This function puts the values in the tree in order. 
+    You want to start going down the left tree, then print the Root (or top of the tree) and then the right side of the tree.
 
 4.  Preorder (Root, Left, Right)
+    This function puts the root first and then gets teh values in numerical order from there. 
+    It does this by grabboing the root and then traverses down the left side and the right side. 
 
 5.  Postorder (Left, Right, Root)
+    This function puts the values in the tree in order and then prints the root at the end. 
+    This is done by traversing down the left side of the tree followed by the right and then printing out the root. 
 
 6. Remove 
-
+    This is a more complicated function that removes a value from the tree. 
     It is important to note that there is a variaty of cases that need to be taken into account
     * Empty tree, this would return false
     * Value you are looking to replace is in the root node
-    * The Value is not in the tree, this would also return false
+    * The value is not in the tree, this would also return false
     * Value has only a left child
     * Value has a right child only
     * The value has both a left and right children
@@ -57,8 +65,6 @@ Then to get this to ‘print’ we need to use the keyword yield. But there is m
 ## Big O
 Only log(n) if it is a balanced binary search tree. 
 
-Space = O(n)
-
 Access = O(log n)
 
 Search = O(log n)
@@ -66,6 +72,8 @@ Search = O(log n)
 Insertion = O(log n)
 
 Deletion = O(log n)
+
+Ordering = O(n)
 
 ## Problem to solve
 ```python
@@ -212,18 +220,7 @@ def main():
     print(bst.exists(18))
 main()
 ```
-Finish this remove function
 
-<<<<<<< HEAD
+[Here is a link to a solution](treestrial.py)
 
-=======
-It is important to note that there is a variaty of cases that need to be taken into account
- * Empty tree, this would return false
- * Value you are looking to replace is in the root node
- * The Value is not in the tree, this would also return false
- * Value has only a left child
- * Value has a right child only
- * The value has both a left and right children
 
-Parent.child 
->>>>>>> ced351cdc1098a721d5a91e7db1adae925bf07eb
