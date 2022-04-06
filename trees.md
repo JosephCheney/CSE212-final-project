@@ -223,4 +223,6 @@ main()
 
 [Here is a link to a solution](treestrial.py)
 
+[Stacks](stack.md)
 
+[Linked Lists](linkedlist.md)

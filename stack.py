@@ -16,6 +16,13 @@ class Stack:
             last_value = stack_copy.pop()
             print (last_value)
         
+    def count_days(self):
+        '''Counts the number of days it will take to wear all of the shirts'''
+        
+        count = len(self.stack)
+        print (count)
+
+
 
 
 #This is the Test       
@@ -27,7 +34,7 @@ stack.add_value("Superman")
 stack.add_value("red")
 stack.add_value("green")
 stack.add_value("BYUI")
-
+stack.count_days() #This should return the length of the stack. 
 #This prints the stack in A LIFO order
 stack.print_stack()
 #expected value == (BYUI, green, red, Superman, Plad, Dorito, Red)

@@ -29,7 +29,7 @@ Print  = O(n)
 
 ## Problem to solve
 
-You have a stack of Shirts in your drawer and you want to wear them in order of the top of the stack to the bottom before you do laundry, implement some code that will output the correct wear order of the shirts. 
+You have a stack of Shirts in your drawer and you want to wear them in order of the top of the stack to the bottom before you do laundry, implement some code that will output the correct wear order of the shirts. How many days will it take to wear all of the shrits?
 
 ```python
 
@@ -46,8 +46,18 @@ class Stack:
         return self.stack.pop()
     
     def print_stack(self):
-        ''' Add the code that will print the stack in the LIFO order. Hint: make a copy of the stack
-        pass 
+        ''' Add the code that will print the stack in the LIFO 
+        order.''' 
+        stack_copy = copy.copy(self.stack)
+        while len(stack_copy) > 0:
+            last_value = stack_copy.pop()
+            print (last_value)
+
+    def count_days(self):
+        '''Counts the number of days it will take to wear 
+        all of the shirts'''
+        
+
         
 
 
@@ -61,6 +71,7 @@ stack.add_value("red")
 stack.add_value("green")
 stack.add_value("BYUI")
 
+stack.count_days() #This should return the length of the stack (7)
 #This prints the stack in A LIFO order
 stack.print_stack()
 #expected value == (BYUI, green, red, Superman, Plad, Dorito, Red)
@@ -73,4 +84,9 @@ stack.print_stack()
 
 ```
 
-[Here is a link to a solution](stack.py)
+[Here is a link to the code](stack.py)
+
+
+[Trees](trees.md)
+
+[Linked Lists](linkedlist.md)
